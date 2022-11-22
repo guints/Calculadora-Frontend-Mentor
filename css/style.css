@@ -1,0 +1,261 @@
+@import url(https://fonts.google.com/specimen/League+Spartan);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+:root{
+    --cor_de_fundo1: hsl(222, 26%, 31%);
+    --cor_fundo-botoes1:  hsl(30, 25%, 89%) ;
+    --cor_botoes1: hsl(221, 14%, 31%);
+    --cor-igual1: hsl(6, 63%, 50%);
+    --cor_calculadora1: hsl(223, 31%, 20%);
+    --cor_fundo_painel1: hsl(224, 36%, 15%);
+    --sonbra-botoes1: hsl(28, 16%, 65%); 
+    --sonbra-igual1: hsl(6, 70%, 34%);
+    --cor-reset-buton1: hsl(225, 21%, 49%);
+    --sonbra-reset1: hsl(224, 28%, 35%);
+    --hover-reset1: hsl(227, 53%, 70%);
+    --cor-igual-hover1: hsl(6, 92%, 61%);
+    --cor_painel-numero1: white ;
+    
+    --cor_de_fundo2: hsl(0, 0%, 90%);
+    --cor_fundo-botoes2:  hsl(45, 7%, 89%);
+    --cor_botoes2:  hsl(60, 10%, 19%);
+    --cor-igual2: hsl(25, 98%, 40%);
+    --cor_calculadora2: hsl(0, 5%, 81%);
+    --cor_fundo_painel2: hsl(0, 0%, 93%);
+    --sonbra-botoes2: hsl(35, 11%, 61%); 
+    --sonbra-igual2: hsl(25, 99%, 27%);
+    --cor-reset-buton2: hsl(185, 42%, 37%);
+    --sonbra-reset2: hsl(185, 58%, 25%);
+    --hover-botao2: white;
+    --hover-reset2: hsl(185, 50%, 56%);
+    --cor-igual-hover2: hsl(25, 95%, 46%);
+    --cor_painel-numero2:hsl(60, 10%, 19%);
+    
+    --cor_de_fundo3: hsl(268, 75%, 9%);
+    --cor_fundo-botoes3:  hsl(268, 47%, 21%) ;
+    --cor_botoes3: hsl(52, 100%, 62%);
+    --cor-igual3: hsl(176, 100%, 44%);
+    --cor_calculadora3: hsl(268, 71%, 12%);
+    --cor_fundo_painel3: hsl(268, 71%, 12%);
+    --sonbra-botoes3: hsl(290, 70%, 36%); 
+    --sonbra-igual3: hsl(177, 92%, 70%);
+    --cor-reset-buton3: hsl(281, 89%, 26%);
+    --sonbra-reset3: hsl(285, 91%, 52%);
+    --hover-botao3: hsl(268, 51%, 39%);
+    --hover-reset3: hsl(281, 92%, 40%);
+    --cor-igual-hover3: hsl(176, 100%, 50%);
+    --cor_painel-numero3:  hsl(52, 100%, 62%);
+
+}
+body{
+    width: 100%;
+    max-width: 1440px;
+    background-color: var(--cor_de_fundo1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+body.thema2{
+    background-color: var(--cor_de_fundo2);
+}
+body.thema2 .btn{
+    background-color: var(--cor_calculadora2);
+}
+
+body.thema2 .controle #circulo{
+    background-color: --cor-igual2;
+}
+body.thema2 h3{
+    color: var(--cor_painel-numero2);
+}
+body.thema2 .controle p{
+   color: var(--cor_painel-numero2);
+}
+body.thema2 #tela{
+    background-color: var(--cor_fundo_painel2);
+    color: var(--cor_painel-numero2);
+}
+body.thema2 .caixa{
+    background-color: var(--sonbra-botoes2);
+}
+body.thema2 .igual{
+    background-color: var(--cor-igual2) ;
+    box-shadow: 0px 3px 0px 0px var(--sonbra-igual2);
+}
+body.thema2 .reset {
+    background-color: var(--cor-reset-buton2) ;
+    box-shadow: 0px 3px 0px 0px var( --sonbra-reset2);
+}
+body.thema2 .del{
+    background-color: var(--cor-reset-buton2) ;
+    box-shadow: 0px 3px 0px 0px var( --sonbra-reset2);
+}
+body.thema2 .right{
+    color: var(--cor_botoes2);
+}
+body.thema2 .numero{
+ background-color: var(--cor_fundo-botoes2);
+ box-shadow: 0px 3px 0px 0px  var(--sonbra-botoes2);
+ color: var(--cor_botoes2);
+}
+
+
+body.thema3 .numero{
+    background-color: var(--cor_fundo-botoes3);
+    box-shadow: 0px 3px 0px 0px  var(--sonbra-botoes3);
+    color: var(--cor_botoes3);
+}
+   
+body.thema3{
+    background-color: var(--cor_de_fundo3);
+}
+body.thema3 .btn{
+    background-color: var(--cor_calculadora3);
+}
+
+body.thema3 .controle #circulo{
+    background-color: --cor-igual3;
+}
+body.thema3 h3{
+    color: var(--cor_painel-numero3);
+}
+body.thema3 .controle p{
+   color: var(--cor_painel-numero3);
+}
+body.thema3 #tela{
+    background-color: var(--cor_fundo_painel3);
+    color: var(--cor_painel-numero3);
+}
+body.thema3 .caixa{
+    background-color: var(--sonbra-botoes3);
+}
+body.thema3 .igual{
+    background-color: var(--cor-igual3) ;
+    box-shadow: 0px 3px 0px 0px var(--sonbra-igual3);
+}
+body.thema3 .reset {
+    background-color: var(--cor-reset-buton3) ;
+    box-shadow: 0px 3px 0px 0px var( --sonbra-reset3);
+}
+body.thema3 .del{
+    background-color: var(--cor-reset-buton3) ;
+    box-shadow: 0px 3px 0px 0px var( --sonbra-reset3);
+}
+body.thema3 .right{
+    color: var(--cor_botoes3);
+}
+
+.num{
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor_painel-numero1);
+    
+    
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+.num p {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.controle{
+    display: flex;
+    justify-content: flex-end;
+}
+.controle .caixa{
+    width: 60px;
+    height: 15px;
+    background-color: var(--cor_fundo_painel1);
+    border-radius: 30px;
+    margin-left: 4px;
+    position: relative;
+}
+.controle #circulo{
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor-igual1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1 ;
+    border-radius: 40px;
+}
+.controle p {
+   cursor: pointer;
+    color: var(--cor_painel-numero1);
+    margin-right: 4px;
+}
+
+.tela{
+    width: 450px;
+}
+#tela{
+    width: 100%;
+    height: 100px;
+    shape-margin: 10px 0px;
+    text-align: right;
+    font-size: 32px;
+    background-color: var(--cor_fundo_painel1);
+    border: none;
+    outline: none;
+    color: var(--cor_painel-numero1);;
+    border-radius: 15px;
+}
+
+button{
+    width: 90px;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px 0px  var(--sonbra-botoes1);
+    margin: 10px 10px;
+    font-size: 32px;
+    height: 55px;
+    background-color: var(--cor_fundo-botoes1) ;
+    color: var(--cor_botoes1);
+   
+}
+.btn{
+    display: flex;
+    width: 450px;
+    flex-flow: wrap;
+    background-color: var(--cor_calculadora1);
+    padding: 10px 5px;
+    margin: 15px 0;
+    font-size: 32px;
+    border-radius: 15px;
+}
+.reset ,.del{
+    background-color: var(--cor-reset-buton1) ;
+    box-shadow: 0px 3px 0px 0px var( --sonbra-reset1);
+    color: #fff;
+    font-size: 16px;
+}
+.reset  ,.igual{
+    width: 200px;
+    font-size: 16px;
+    
+}
+.igual{
+    background-color: var(--cor-igual1) ;
+    box-shadow: 0px 3px 0px 0px var(--sonbra-igual1);
+    color: #fff;
+}
+.numero{
+    font-size: 32px;
+}
+h3{
+    color: var(--cor_painel-numero1);
+}
